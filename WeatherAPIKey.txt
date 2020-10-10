@@ -1,0 +1,8 @@
+key: 
+8321a2f6cd52a87f06b8cf7d324bc36d
+or
+ad5a7fe3d31917ce6f5692b14960dbd4
+
+API call:
+
+http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={YOUR API KEY}

@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+}
+
+#app {
+    height: 100vh;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-evsenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    min-height: 40%;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    padding-top: 2em;
+    margin: 0 auto;
+    background-color: #fff;
+    border-style: inset;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    transition: all .3s;
+}
+
+.form-label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, .02);
+    border-radius: 0px;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all .5s;
+    padding: 5px;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(231, 215, 68);
+}
+
+
+/* add animation to label when form control have focus */
+
+.form-control:focus+.form-label,
+
+/* Added when the input filled with data the label not animate inside again */
+
+.form-control:not(:placeholder-shown)+.form-label {
+    transform: translateY(-2.5em) scale(.8);
+}
+
+textarea.form-control:focus+.form-label,
+textarea.form-control:not(:placeholder-shown)+.form-label {
+    transform: translateY(-6.5em) scale(.9);
+}
+
+.form-group:focus-within {
+    transform: scale(1.05, 1.05);
+}
+
+.entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    min-height: 15%;
+    background-color: darkgrey;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: inset;
+}
+
+#entryHolder {}
+
+#date {}
+
+#temp {}
+
+#content {}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Piedra', cursive;
+    color: rgb(231, 215, 68);
+    letter-spacing: 2px;
+    text-shadow: 6px 6px 8px #000;
+    margin: 2%;
+}
+
+.title {}
+
+.BTN_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background: #576d9c;
+    color: rgb(231, 215, 68);
+    margin: .5%;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px #444;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    transition: ease 0.5s all;
+    color: rgb(245, 164, 13);
+    text-decoration: none;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+
+button:focus {
+    outline: none;
+}
+
+
+/* Style for Placeholder Text*/
