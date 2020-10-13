@@ -3,45 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
     <title>Weather Journal</title>
     <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="headline">
-        Weather Journal App
+    <div class="branding">
+        <h1 class="headline">Weather Journal App</h1>
     </div>
     <div id="app">
 
-        <form class="form-container" autocomplete="off">
+        <form id="form" class="form-container" autocomplete="off">
             <div class="form-group">
                 <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter zip code here">
-                <label for="zip" class="form-label">Enter ZIP code here</label>
+                <label for="zip" class="form-label">Enter ZIP code here
+                    <small></small>
+                </label>
+
             </div>
 
             <div class="form-group">
                 <input type="text" class="form-control" id="countryCod" name="countryCod" placeholder="Enter Country code here">
-                <label for="countryCod" class="form-label">Enter Country code here</label>
+                <label for="countryCod" class="form-label">Enter Country code here
+                    <small></small>
+                </label>
+
             </div>
 
             <div class="form-group">
-                <textarea class="form-control" id="feelings" placeholder="Enter your feelings here" rows="5" cols="30"></textarea>
-                <label for="feelings" class="form-label">Enter your feelings for today?</label>
+                <textarea class="form-control" id="feelings" placeholder="Enter your feelings here" rows="4" cols="50"></textarea>
+                <label for="feelings" class="form-label">Enter your feelings for today?
+                    <small></small>
+                </label>
             </div>
-
         </form>
         <div class="BTN_container">
             <button id="generate" type="submit">Get Weather</button>
             <button id="formReset" type="reset">Clear Form</button>
         </div>
-
         <div class="entry">
-            <div class="title">Most Recent Entry</div>
+            <h4 class="title">Most Recent Entry</h4>
             <div id="entryHolder">
                 <div id="date"></div>
                 <div class="temperature" id="temp"></div>
-                <div id="content"></div>
+                <div class="content-container" id="content"></div>
             </div>
         </div>
     </div>

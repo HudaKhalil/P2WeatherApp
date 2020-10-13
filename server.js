@@ -1,6 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
 projectData = [];
-// const publicStaticProjPath = path.join(__dirname, 'website');
 // Require Express to run server and routes
 const express = require('express');
 //The body-parser required
@@ -16,7 +15,6 @@ app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
 // Initialize the main project folder
-// app.use(express.static(publicStaticProjPath));
 app.use(express.static('website'));
 
 // Setup Server
@@ -31,7 +29,6 @@ const server = app.listen(port, () => {
 
 //GET route
 app.get('/all', (request, response) => {
-    // console.log('Get Route');
     response.send(projectData);
     //Reset projectData after send request
     projectData = [];
@@ -47,8 +44,5 @@ app.post('/add', (request, response) => {
         content: request.body.content
     }
     projectData.push(newEntry);
-    // projectData['date'] = request.body.date;
-    // projectData['temp'] = request.body.temp;
-    // projectData['content'] = request.body.content;
-    // response.send(projectData);
+
 });
