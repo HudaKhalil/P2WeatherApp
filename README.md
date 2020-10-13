@@ -17,8 +17,8 @@ Weather-Journal requires to create an asynchronous web app that uses OpenWeather
     - Install Express package.
     - Install Body-Parser package.
     - Install Cors package. 
-3. Loop throug each section and check the section top less than 150 or not from the viewport.
-4. Add Active or not.
+3. Require all installed packages in the `server.js` file.
+4. Create a server running on localhost:port saved on `server.js` file.
 
 
 
