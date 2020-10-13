@@ -17,8 +17,12 @@ Weather-Journal requires to create an asynchronous web app that uses OpenWeather
     - Install Express package.
     - Install Body-Parser package.
     - Install Cors package. 
-3. Require all installed packages in the `server.js` file.
-4. Create a server running on localhost:port saved on `server.js` file.
+## Instructions
+1. Require all installed packages in the `server.js` file.
+2. Create a server running on localhost:port saved on `server.js` file.
+3. Test the server is running, using the installed Node in the terminal to run the file `server.js`.
+4. Create GET Route that returns the `projectData`.
+6. Create POST Route that adds the incoming data from the server to `projectData`.
 
 
 
