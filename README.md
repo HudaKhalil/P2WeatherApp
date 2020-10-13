@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Overview](#Overview)
-* [Prerequisite Installation](#Prerequisite Installation)
+* [Prerequisite Installation](#PrerequisiteInstallation)
 * [Instructions](#Instructions)
 * [Extras](#Extras)
 
